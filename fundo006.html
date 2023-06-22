@@ -3,21 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Teste de imagem</title>
+    <title>Findo Fixo de Tela</title>
     <style>
         body{
+            
             height: 100vh;
-            background-color: black;
+            /*background-color: black;
             background-image: url('/wallpaper002.jpg');
             border: 1px solid darkblue;
             border-radius: 15px;
             background-position: top center;
             background-repeat: no-repeat;
-            background-size: cover;/*cover contain auto*/
+            background-size: cover;
+            background-attachment: fixed; */
+
+            /* Shorthand - background
+            color > image > position > repeat > [size] > attachment
+            
+            */
+
+            background: black url('/wallpaper002.jpg') center center no-repeat fixed;
+            
+            background-size: cover;
         }
         main{
             background-color: white;
-            width: 400px;
+            max-width: 400px;
             padding: 10px;
             margin: auto;
         }
