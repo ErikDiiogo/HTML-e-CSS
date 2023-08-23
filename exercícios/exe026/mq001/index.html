@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mídia Queris </title> <!-- Tela -->
+    <style media="screen">
+     *{
+        padding: 0px;
+        margin: 0px;
+     }   
+     html{
+        font-family: Arial, Helvetica, sans-serif;
+        font-size: 1em;
+     }
+     header{
+        background-color: rgb(158, 158, 158);
+     }
+     header h1{
+        text-align: center;
+     }
+     menu ul{
+        list-style-type: none;
+        background-color: gray;
+     }
+     menu li{
+        background-color: rgb(75, 75, 75);
+        color: white;
+        display: inline-block;
+        padding:10px;
+     }
+     article{
+        width: 600px;
+        display: block;
+        margin: auto;
+     }
+    </style>
+    <style media="print">
+        *{
+            padding: 10px;
+            margin: 10px;
+        }
+        html{
+            font-family:'Courier New', Courier, monospace ;
+            font-size: 1.5em;
+            line-height: 1.5em;
+        }
+        menu{
+            display: none;
+        }
+        article{
+            width : 100%;
+        }
+        article::after{
+            content: 'Esse arquivo foi impresso através do site www.cursoemvideo.com';
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Notícias</h1>
+        <menu>
+            <ul>
+                <li>Esportes</li>
+                <li>Política </li>
+                <li>Tecnologia</li>
+            </ul>
+        </menu>
+    </header>
+    <main>
+        <article>
+            <h2>Estou Aprendendo a Criar um Media Queries </h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint fugit doloribus quaerat harum, quidem tempora adipisci, iste ut sit voluptates quam veniam eaque debitis omnis, autem porro! Labore, nostrum cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus eius deleniti accusamus hic, accusantium dolor veniam doloribus enim aut eaque possimus consectetur, assumenda nostrum adipisci dolorem autem sequi. Molestiae, iste.
+
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet consectetur, adipisicing elit. Rerum a minus blanditiis praesentium, quisquam ipsam. Molestiae eum sunt, tempore reprehenderit iste eius cumque exercitationem in sint unde, quibusdam ea possimus. Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi voluptatum nostrum autem hic id? Ex beatae porro ipsam a amet? Sunt ullam repudiandae odit minus molestias nemo eveniet dolor qui?
+            </p>
+            <p>
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sapiente veritatis ducimus voluptatem. Iste sequi nostrum pariatur eos repudiandae id quaerat harum soluta explicabo ipsum consequuntur dolores necessitatibus, doloribus alias veniam!
+            </p>
+        </article>
+    </main>
+</body>
+</html>
